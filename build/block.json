@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/formo-slider-slide-cheese",
+  "version": "0.1.0",
+  "title": "Formo Slider Slide Cheese",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "contentHead": {
+      "type": "string",
+      "default": "Cheesename",
+      "source": "html",
+      "selector": "h2"
+    },
+    "contentSubHead": {
+      "type": "string",
+      "default": "Cheese Subhead",
+      "source": "html",
+      "selector": "h3"
+    },
+    "content": {
+      "type": "string",
+      "default": "Cheesedescription",
+      "source": "html",
+      "selector": "p"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "More info",
+      "source": "html",
+      "selector": "a"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  },
+  "textdomain": "formo-slider-slide-cheese",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
