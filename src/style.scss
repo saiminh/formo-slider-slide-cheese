@@ -2,6 +2,7 @@
 .formo-slider-slide-cheese .wp-block-columns {
   margin-bottom: 0;
   position: relative;
+  --transition: all 0.5s ease-out; 
 }
 .formo-slider-slide-cheese > .wp-block-columns > .wp-block-column {
   padding-top: 3em;
@@ -21,13 +22,13 @@
 }
 .content-column > * {
   opacity: 0;
-  transform: translateY(-20px);
-  transition: all .5s ease-in-out;
+  // transform: translateY(-20px);
+  transition: var(--transition);
   position: relative;
   z-index: 2;
 
   &.overflow-width {
-    transform: translateY(20px);
+    // transform: translateY(20px);
   }
 }
 .active .content-column > * {
@@ -51,15 +52,17 @@
   & figure  {
     border-radius: 1.2em;
     overflow: hidden;
-    transform: scale(1.2);
-    transition: all 0.5s cubic-bezier(.71,.21,.15,1);
+    // transform: scale(1.2);
+    // transition: all 0.5s cubic-bezier(.71,.21,.15,1);
+    transition: var(--transition);
     aspect-ratio: 1.7777777778;
     position: relative;
   }
   & figure img {
     filter: brightness(.75);
-    transition: all 0.75s cubic-bezier(.71,.21,.15,1);
-    transform: scale(1.2);
+    // transition: all 0.75s cubic-bezier(.71,.21,.15,1);
+    transition: var(--transition);
+    // transform: scale(1.2);
     opacity: 0;
     object-fit: cover;
     position: relative;

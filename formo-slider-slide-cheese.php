@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Formo Slider Slide Cheese
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Examples block scaffolded with Create Block tool.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
