@@ -24,7 +24,7 @@ export default function save( {attributes} ) {
         <div className="wp-block-column span3 gridline content-column">
           <div className="overflow-width">
             <RichText.Content { ...useBlockProps.save({
-              className: 'has-formo-yellow-color has-text-color has-link-color has-xxxx-large-font-size formo-slider-slide-cheese-head' 
+              className: 'has-formo-yellow-color has-text-color has-link-color formo-slider-slide-cheese-head' 
             }) } 
               tagName="h2"
               value={attributes.contentHead} 
